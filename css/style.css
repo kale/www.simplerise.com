@@ -1,0 +1,89 @@
+html, body, div, img, ul, li, a {margin: 0px; padding: 0px;}
+
+body {
+	color: #fff;
+	font-size: 1em;
+	font-family: Helvetica, Helvetica Neue, Arial;
+	background: #8cbce0 url(../img/bg.png) no-repeat fixed top center;
+}
+
+div#container {
+	width: 400px;
+	margin: 0 auto;
+	padding: 10px 20px;
+
+}
+
+div#contact {
+	background: #8cbce0 url(../img/bg.png) fixed top center;
+}
+
+h1 {
+	display: none;
+}
+
+div#footer {
+	width: 400px;
+	padding: 0px 0px 10px;
+	z-index: -100;
+}
+
+div#footer p {
+	text-align: center;
+}
+
+/*****************************************************************************/
+
+a {
+	color: #aaa;
+	text-decoration: none;
+}
+
+span.highlight {
+	font-weight: bold;
+}
+
+span.strike {
+	text-decoration: line-through;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	margin: 0 0 12px 0;
+	padding: 0px;
+	text-align:justify;
+}
+
+div#footer p {
+	font-family: 'Century Gothic';
+	font-size: .9em;
+	color: #777;
+}
+
+div#footer p a:link, div#footer p a:visited, div#footer p a:hover {
+	color: #777;
+	text-decoration: none;
+}
+
+html, body {overflow:auto;}
+
+#frame {
+	width: 100%;
+	height: 175px;
+	background: url(../img/simplerise-logo.png) no-repeat bottom center;
+	overflow:hidden;
+}
+
+#slider {
+	position: relative;
+	width: 2500px;
+	margin-left: -750px;
+}
+.one, .two {
+	width: 1069px;
+	height: 168px;
+
+}

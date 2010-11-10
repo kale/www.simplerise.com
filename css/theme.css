@@ -1,0 +1,338 @@
+/* - - - Custom Theme - - - */
+
+/* ----- Logo ----- */
+h1 a {
+	background-image:url('../images/wflogo.png'); 
+	min-height:0;
+	height:40px;
+}
+* html h1 a {/* IE6 png Support */
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/wflogo.png", sizingMethod="crop");
+}
+
+/* ----- Backgrounds ----- */
+html{
+	background-image:none;	background-color:#f0e14c;
+}
+h1{
+	background-image:none;	background-color:#ffbb20;
+}
+#container, html.embed{
+	background-color:#fff79f;
+}
+.safari .wufoo input.file{
+	background:none;
+	border:none;
+}
+.wufoo li.focused{
+	background-color:#fa7b12;
+}
+.wufoo .instruct{
+	background-color:#e85305;
+}
+
+/* ----- Borders ----- */
+#container{
+	border:0 solid #cccccc;
+}
+.wufoo .info, .wufoo .paging-context{
+	border-bottom:1px dotted #ffbb20;
+}
+.wufoo .section h3, .wufoo .captcha, #payment .paging-context{
+	border-top:1px dotted #ffbb20;
+}
+.wufoo input.text, .wufoo textarea.textarea{
+	border:;
+}
+.wufoo .instruct{
+	border:0 solid #e6e6e6;
+}
+.fixed .info{
+	border-bottom:none;
+}
+
+/* ----- Typography ----- */
+.wufoo .info h2{
+	font-size:160%;
+	font-family:inherit;
+	font-weight:;
+	font-style:;
+	color:#000000;
+}
+.wufoo .info div{
+	font-size:95%;
+	font-family:inherit;
+	font-weight:;
+	font-style:;
+	color:#444444;
+}
+.wufoo .section h3{
+	font-size:110%;
+	font-family:inherit;
+	font-weight:;
+	font-style:;
+	color:#000000;
+}
+.wufoo .section div{
+	font-size:85%;
+	font-family:inherit;
+	font-weight:;
+	font-style:;
+	color:#444444;
+}
+
+.wufoo label.desc{
+	font-size:95%;
+	font-family:inherit;
+	font-weight:;
+	font-style:;
+	color:#333333;
+}
+.wufoo label.choice{
+	font-size:100%;
+	font-family:inherit;
+	font-weight:;
+	font-style:;
+	color:#333333;
+}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo input.file, .wufoo select.select{
+	font-size:100%;
+	font-family:inherit;
+	font-weight:;
+	font-style:;
+	color:#333333;
+}
+.wufoo li div, .wufoo li span, .wufoo li div label, .wufoo li span label{
+	font-family:inherit;
+	color:#333333;
+}
+.safari .wufoo input.file{ /* Webkit */
+	font-size:100%;
+	font-family:inherit;
+	color:#333333;
+}
+.wufoo .instruct small{
+	font-size:80%;
+	font-family:inherit;
+	font-weight:;
+	font-style:;
+	color:#ffffff;
+}
+
+.altInstruct small, li.leftHalf small, li.rightHalf small,
+li.leftThird small, li.middleThird small, li.rightThird small,
+.iphone small{
+	color:#333333 !important;
+}
+
+/* ----- Button Styles ----- */
+
+.wufoo input.btTxt{
+	font-size:;
+	font-family:;
+	font-weight:;
+	font-style:;
+	color:;
+}
+
+/* ----- Highlight Styles ----- */
+
+.wufoo li.focused label.desc,
+.wufoo li.focused div, .wufoo li.focused span, .wufoo li.focused div label, .wufoo li.focused span label,
+.safari .wufoo li.focused input.file{ 
+	color:#000000;
+}
+
+/* ----- Confirmation ----- */
+
+.confirm h2{
+	font-family:inherit;
+	color:#333333;
+}
+a.powertiny b, a.powertiny em{
+color:#1a1a1a !important;
+}
+.embed a.powertiny b, .embed a.powertiny em{
+color:#1a1a1a !important;
+}
+
+/* ----- Pagination ----- */
+
+.pgStyle1 var, .pgStyle2 var, .pgStyle2 em, .page1 .pgStyle2 var, .pgStyle1 b, .wufoo .buttons .marker{
+	font-family:inherit;
+	color:#333333;
+}
+.pgStyle1 var, .pgStyle2 td{
+	border:1px solid #ccc67f;
+}
+.pgStyle1 .done var{
+	background:#ccc67f;
+}
+
+.pgStyle1 .selected var, .pgStyle2 var, .pgStyle2 var em{
+	background:#fa7b12;
+	color:#000000;
+}
+.pgStyle1 .selected var{
+	border:1px solid #e16f10;
+}
+
+.buttons button, .buttons button:hover{
+	color:#000000;
+}
+
+/* Likert Backgrounds */
+
+.likert table{
+	background-color:#fff79f;
+}
+.likert thead td, .likert thead th{
+	background-color:#e6de8f;
+}
+.likert tbody tr.alt td, .likert tbody tr.alt th{
+	background-color:#f5ed99;
+}
+
+/* Likert Borders */
+
+.likert table, .likert th, .likert td{
+	border-color:#ded78a;
+}
+.likert td{
+	border-left:1px solid #ccc67f;
+}
+
+/* Likert Typography */
+
+.likert caption, .likert thead td, .likert tbody th label{
+	color:#333333;
+	font-family:inherit;
+}
+.likert tbody td label{
+	color:#484848;
+	font-family:inherit;
+}
+.likert caption, .likert tbody th label{
+	font-size:95%;
+}
+
+/* Likert Hover */
+
+.likert tbody tr:hover td, .likert tbody tr:hover th, .likert tbody tr:hover label{
+	background-color:#fa7b12;
+	color:#000000;
+}
+.likert tbody tr:hover td{
+	border-left:1px solid #c8620e;
+}
+
+/* ----- Report Styles ----- */
+
+.wufoo .wfo_graph h3{
+	font-size:95%;
+	font-family:inherit;
+	color:#333333;
+}
+.wfo_txt, .wfo_graph h4{
+	color:#333333;
+}
+.wufoo .footer h4{
+	color:#000000;
+}
+.wufoo .footer span{
+	color:#333333;
+}
+
+/* ----- Number Widget ----- */
+
+.wfo_number{
+	background-color:#f5ed99;
+	border-color:#ded78a;
+}
+.wfo_number strong, .wfo_number em{
+	color:#000000;
+}
+
+/* ----- Chart Widget Border and Background Colors ----- */
+
+#widget, #widget body{
+	background:#fff79f;
+}
+.fcNav a.show{
+	background-color:#fff79f;
+	border-color:#ccc67f;
+}
+.fc table{
+	border-left:1px solid #ded78a;	
+}
+.fc thead th, .fc .more th{
+	background-color:#ded78a !important;
+	border-right:1px solid #ccc67f !important;
+}
+.fc tbody td, .fc tbody th, .fc tfoot th, .fc tfoot td{
+	background-color:#fff79f;
+	border-right:1px solid #ccc67f;
+	border-bottom:1px solid #ded78a;
+}
+.fc tbody tr.alt td, .fc tbody tr.alt th, .fc tbody td.alt{
+	background-color:#f5ed99;
+}
+
+/* ----- Chart Widget Typography Colors ----- */
+
+.fc caption, .fcNav, .fcNav a{
+	color:#333333;
+}
+.fc tfoot, 
+.fc thead th,
+.fc tbody th div, 
+.fc tbody td.count, .fc .cards tbody td a, .fc td.percent var,
+.fc .timestamp span{
+	color:#000000;
+}
+.fc .indent .count{
+	color:#3b3b3b;
+}
+.fc .cards tbody td a span{
+	color:#717171;
+}
+
+/* ----- Chart Widget Hover Colors ----- */
+
+.fc tbody tr:hover td, .fc tbody tr:hover th,
+.fc tfoot tr:hover td, .fc tfoot tr:hover th{
+	background-color:#fa7b12;
+}
+.fc tbody tr:hover th div, .fc tbody tr:hover td, .fc tbody tr:hover var,
+.fc tfoot tr:hover th div, .fc tfoot tr:hover td, .fc tfoot tr:hover var{
+	color:#000000;
+}
+
+/* ----- Payment Summary ----- */
+
+.invoice thead th, 
+.invoice tbody th, .invoice tbody td,
+.invoice tfoot th,
+.invoice .total,
+.invoice tfoot .last th, .invoice tfoot .last td,
+.invoice tfoot th, .invoice tfoot td{
+	border-color:#ded78a;
+}
+.invoice thead th{
+	background:#f5ed99;
+}
+.invoice th, .invoice td{
+	color:#000000;
+}
+#ppSection, #ccSection{
+	border-bottom:1px dotted #ffbb20;
+}
+#shipSection, #invoiceSection{
+	border-top:1px dotted #ffbb20;
+}
+
+/* Drop Shadows */
+#bottom{
+	visibility:visible;
+}
