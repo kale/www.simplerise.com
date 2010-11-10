@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <!-- An example of using JQuery to make looping clouds. -->
+  <head>
+    <title>Transition Test</title>
+    
+	<style>
+		body {
+			background: #000;
+		}
+      #frame {
+        width: 600px;
+        height: 400px;
+		overflow: hidden;
+      }
+      #slider {
+        position: relative;
+        width: 1200px;
+      }
+      .one, .two {
+        width: 600px;
+        height: 400px;
+        float: left;
+      }
+    </style>
+    
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      $(function() {
+	function resetAnimation() {
+	  $("#slider").animate({ "left": "-=600px"}, 10000, function() {
+	    $("#slider").css("left", "0");
+	    resetAnimation();
+	  });
+        }
+	resetAnimation();
+      });
+    </script>
+  </head>
+  
+  <body>
+    <div id="header">
+      <h1>Transition Test</h1>
+    </div>
+    
+    <div id="frame">
+      <div id="slider">
+        <img src="img/cloud1.png" class="one">
+        <img src="img/cloud1.png" class="two">
+      </div>
+    </div>
+  </body>
+</html>
+

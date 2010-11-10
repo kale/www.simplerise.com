@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<title>Rise and shine with our web solutions for Greater Portland Maine - Simplerise</title>
+
+	<!-- Meta Tags -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="index, follow" />
+
+	<meta name="description" content="From web apps to websites, we offer simple solutions for Greater Portland Maine. Let us help you rise and shine today." />
+	<meta name="keywords" content="web design, web apps, webapp, portland, maine, scarborough" />
+	<meta name="author" content="Kale Davis, Simplerise.com" />
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- JavaScript : Include and embedded version -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery.smooth-scroll.js" type="text/javascript"></script>
+	<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+	  $('li a').smoothScroll({
+		afterScroll: function() {
+		  /* location.hash = this.hash; */
+		}
+	  });
+	});
+	</script>
+	<script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+	<!--  initialize the slideshow when the DOM is ready --> 
+	<script type="text/javascript"> 
+		$(document).ready(function() {
+			$('.slideshow').cycle({
+				fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+			});
+		});
+	</script>
+
+    <script type="text/javascript">
+      $(function() {
+	function resetAnimation() {
+	  $("#slider").animate({ "left": "+=2000px"}, 100000, function() {
+	    $("#slider").css("left", "0");
+	    resetAnimation();
+	  });
+        }
+	resetAnimation();
+      });
+    </script>	
+</head>
+
+<body>
+	<div id="frame">
+      <div id="slider">
+        <img src="img/cloud2.png" class="one">
+      </div>
+	</div>
+	<div id="container">
+		<div id="contact">
+			<script type="text/javascript">var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+			<script type="text/javascript">
+			var x7x0k1 = new WufooForm();
+			x7x0k1.initialize({
+			'userName':'simplerise', 
+			'formHash':'x7x0k1', 
+			'autoResize':true,
+			'height':'554'});
+			x7x0k1.display();
+			</script>	
+		</div>
+		
+		<div id="footer">
+			<p>&copy; 2010 - Simplerise <img src="img/cross.png"/> Scarborough, Maine</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-91485-9");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</html>
