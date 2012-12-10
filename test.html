@@ -9,47 +9,66 @@
 		body {
 			background: #000;
 		}
+html, body, div, img, ul, li, a {
+margin: 0px;
+padding: 0px;
+}
       #frame {
-        width: 600px;
-        height: 400px;
-		overflow: hidden;
+background: url(img/simplerise-logo.png) no-repeat 50% 100%;
+height: 175px;
+overflow: hidden;
+width: 100%;
       }
-      #slider {
-        position: relative;
-        width: 1200px;
+      #slider, #slider2 {
+        margin-left: -750px;
+        position: fixed;
+        width: 2500px;
       }
+     #slider2 {
+       margin-left: -850px;
+       margin-top: -55px;
+     }
       .one, .two {
-        width: 600px;
-        height: 400px;
-        float: left;
+        width: 1069px;
+        height: 168px;
       }
     </style>
     
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
 
     <script type="text/javascript">
-      $(function() {
-	function resetAnimation() {
-	  $("#slider").animate({ "left": "-=600px"}, 10000, function() {
-	    $("#slider").css("left", "0");
-	    resetAnimation();
-	  });
-        }
-	resetAnimation();
+      $(document).ready(function() {
+
+ $("#slider2").queue("fx",[]).stop();
+ $("#slider").queue("fx", []).stop();
+ var slideMe = function(cloud, v) {
+	 var sTop = cloud.css("margin-top");
+	 cloud.css({left:0, top:0, opacity:0})
+		.animate({ "left": "+=100px", "opacity":"+=0.2"}, 1000*v, 'linear')
+		.animate({ "left": "+=300px"}, 3000*v, 'linear')
+		.animate({ "left": "+=400px", "opacity":"+=0.6", "margin-top":"-=50"}, 4000*v, 'linear')
+		.animate({ "left": "+=1000px"}, 10000*v, 'linear')
+		.animate({ "left": "+=500px", "opacity":"0.0","margin-top":sTop}, 5000*v, 'linear', function() { slideMe(cloud, v);});
+	};
+  slideMe($("#slider"), 1.5);
+  slideMe($("#slider2"), 1);
       });
     </script>
   </head>
   
   <body>
-    <div id="header">
-      <h1>Transition Test</h1>
-    </div>
     
     <div id="frame">
-      <div id="slider">
-        <img src="img/cloud1.png" class="one">
-        <img src="img/cloud1.png" class="two">
-      </div>
+      <div id="slider" style="display: block; "> 
+        <img src="img/cloud2.png" class="one"> 
+      </div> 
+      <div id="slider2" style="display: block; margin-top: -55px;  "> 
+        <img src="img/cloud2.png" class="one"> 
+      </div> 
+    </div>
+
+    <div id="header">
+      <h1>Transition Test</h1>
     </div>
   </body>
 </html>
